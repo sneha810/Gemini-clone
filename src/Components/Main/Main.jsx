@@ -33,7 +33,6 @@ const Main = () => {
                             <div className="card" onClick={
                                 async()=>{
                                 await setInput("coding 1") 
-                                onSent()
 
                             }}>
                                 <p>coding 1</p>
@@ -41,30 +40,27 @@ const Main = () => {
                             </div>
                             <div className="card" onClick={
                                 async()=>{
-                                await setInput("how to grow my youtube channel") 
-                                onSent()
+                                await setInput("how to grow my youtube channel?") 
 
                             }}>
                                 <p>how to grow my youtube channel</p>
-                                <a className='card-icon'><IoBulbOutline /></a>
+                                <a onClick={() => onSent()} className='card-icon'><ImCompass /></a>
                             </div>
                             <div className="card" onClick={
                                 async()=>{
                                 await setInput("what's the currency of bitcoin") 
-                                onSent()
 
                             }}>
                                 <p>what's the currency of bitcoin</p>
-                                <a className='card-icon'><ImCompass /></a>
+                                <a onClick={() => onSent()} className='card-icon'><ImCompass /></a>
                             </div>
                             <div className="card" onClick={
                                 async()=>{
                                 await setInput("write a javascript code to summ all the elements in an array") 
-                                onSent()
 
                             }}>
                                 <p>write a javascript code to summ all the elements in an array</p>
-                                <a className='card-icon'><BsCode /></a>
+                                <a onClick={() => onSent()} className='card-icon'><ImCompass /></a>
                             </div>
                         </div>
                     </>
